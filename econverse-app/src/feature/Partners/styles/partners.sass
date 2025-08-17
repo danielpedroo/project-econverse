@@ -1,0 +1,99 @@
+.grid_columns_partners
+  width: 1280px
+  height: 350px
+  display: grid
+  grid-template-columns: 634px 634px
+  gap: 13px
+  margin-left: 120px
+  justify-items: center   
+  align-items: center     
+
+
+  .partners
+    position: relative
+    width: 634px
+    height: 350px
+    overflow: hidden
+
+    &__background
+      width: 100%
+      height: 100%
+      position: relative
+
+      &::before
+        content: ''
+        position: absolute
+        top: 89px
+        left: 0
+        width: 634px
+        height: 261px
+        z-index: 1
+        background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8))
+        border-bottom-right-radius: 20px
+        border-bottom-left-radius: 20px
+
+      img
+        width: 100%
+        height: 100%
+        object-fit: cover
+        display: block
+        border-radius: 20px
+        position: relative
+        z-index: 0
+
+    &__overlay
+      position: absolute
+      top: 215px
+      left: 45px
+      transform: translateY(-50%)
+      z-index: 2
+      color: #fff
+      display: flex
+      flex-direction: column
+      gap: 20px
+      max-width: 40%
+      text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6)
+
+      &__section
+        width: 217px
+        height: 60px
+
+        &__title
+          font-family: 'Poppins', sans-serif
+          font-weight: 700
+          font-size: 40px
+          line-height: 100%
+          color: rgba(255, 255, 255, 1)
+
+      &__description
+        width: 200px
+        height: 48px
+
+        &__text
+          font-family: 'Poppins', sans-serif
+          font-weight: 400
+          font-size: 16px
+          line-height: 100%
+          letter-spacing: 0%
+          color: rgba(255, 255, 255, 1)
+
+      &__button
+        &__cta
+          width: 144.69px
+          height: 48px
+          background-color: #f7ca11
+          color: #271c47
+          border: none
+          border-radius: 6px
+          font-family: 'Poppins', sans-serif
+          font-weight: 700
+          font-size: 16px
+          line-height: 100%
+          letter-spacing: 2px
+          text-transform: uppercase
+          text-align: center
+          cursor: pointer
+          transition: background-color 0.3s ease
+
+          &:hover
+            background-color: #e6c200
