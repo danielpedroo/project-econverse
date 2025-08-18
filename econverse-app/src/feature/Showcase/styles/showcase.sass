@@ -1,0 +1,198 @@
+.showcase
+  width: 1400px
+  height: 620px
+  display: flex
+  flex-direction: column
+  align-items: center
+  margin: 0 auto
+
+  &__header
+    width: 1280px
+    height: 72px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+  &__title
+    font-size: 22px
+    font-weight: bold
+    color: #2f3ab2
+
+  &__line
+    max-width: 360px
+    flex: 1
+    height: 1px
+    border: none
+    background: #dedede
+
+  &__nav 
+    width: 1270px
+    height: 40px
+    margin: 0 auto 20px auto
+  
+
+  &__nav-list 
+    display: flex
+    justify-content: center
+    list-style: none
+    padding: 0
+    margin: 0
+    border: 1px solid #ddd
+    border-left: none
+  
+
+  &__nav-item 
+    flex: 1
+    text-align: center
+    border-left: 1px solid #ddd
+  
+
+  &__nav-link 
+    display: block
+    padding: 10px 20px
+    text-decoration: none
+    color: #333
+    font-size: 14px
+    transition: color 0.3s ease, font-weight 0.3s ease
+
+    &:hover 
+      font-weight: bold
+      color: #2f3ab2
+    
+  &__container
+    display: flex
+    height: 500px
+    position: relative
+
+  &__arrow
+    width: 32px
+    height: 32px
+    border-radius: 50%
+    background: #fff
+    box-shadow: 0 2px 6px #00000033
+    border: none
+    cursor: pointer
+    display: flex
+    align-items: center
+    justify-content: center
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+
+    img
+      width: 8px
+      height: 13px
+
+    &--left
+      right: -40px
+      rotate: 180deg
+
+    &--right
+      left: -40px
+      rotate: 180deg
+      transform: translateY(-50%) rotate(180deg)
+
+  &__cards
+    display: flex
+    flex-direction: row
+    gap: 18px
+
+  &__card
+    width: 304px
+    height: 500px
+    background: #fff
+    border-radius: 10px
+    box-shadow: 0 4px 8px #0000001a
+    display: flex
+    flex-direction: column
+    align-items: flex-start
+    text-align: start
+
+    &__wrapper
+      margin-top: 17px 
+      width: 278.1px
+      height: 351px
+      margin-left: 12.39px
+
+    &__image-wrapper
+      width: 100%
+      height: 420px
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+
+    &__image
+      width: 278.1px
+      height: 228px
+      object-fit: contain
+
+    &__description-wrapper
+      width: 280px
+      height: 46px
+
+    &__description
+      font-family: 'Poppins', Arial, sans-serif
+      font-weight: 300
+      font-size: 15px
+      line-height: 100%
+      color: #3f3f40
+
+    &__pricing
+      display: flex
+      flex-direction: column
+      gap: 4px
+
+    &__pricing-wrapper
+      display: flex
+      flex-direction: column
+      gap: 10px
+      width: 100px
+      height: 56px
+
+    &__old-price
+      font-family: 'Poppins', Arial, sans-serif
+      text-decoration: line-through
+      font-weight: 400
+      line-height: 100%
+      font-size: 14px
+      color: #808080
+
+    &__price
+      font-family: 'Poppins', Arial, sans-serif
+      font-size: 20px
+      font-weight: 700
+      line-height: 100%
+      color: rgb(63, 63, 64)
+
+    &__installments
+      font-family: 'Poppins', Arial, sans-serif
+      font-weight: 400
+      font-size: 12px
+      width: 186.9px
+      height: 18px
+      color: #3f3f40
+
+    &__shipping
+      font-family: 'Poppins', Arial, sans-serif
+      font-weight: 400
+      font-size: 12px
+      line-height: 100%
+      width: 76.56px
+      height: 18px
+      color: #2f3ab2
+
+    &__action
+      margin-top: auto
+      width: 100%
+
+    &__button
+      background: #2f3ab2
+      color: #fff
+      border: none
+      border-radius: 6px
+      padding: 12px 20px
+      font-weight: bold
+      cursor: pointer
+      width: 100%
