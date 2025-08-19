@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { getProducts } from "./services/showcase-products-api";
-import Modal from "./ui/modal";
+import Modal from "./ui/Modal";
 import "./styles/showcase.sass";
 import { formatPrice } from "./model/formatPrice";
 import arrowIcon from "../../../public/vector-showcase.svg";
