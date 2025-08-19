@@ -1,90 +1,90 @@
-# 🚀 project-econverse
+# project-econverse 🚀
 
-## 📄 Descrição
+## 📌 Descrição
 
-Este repositório foi desenvolvido como parte do processo seletivo para a vaga de Desenvolvedor Frontend Júnior na empresa **Econverse**. O desafio consistiu na implementação de uma landing page responsiva, com foco em boas práticas de desenvolvimento, organização de código e uso de tecnologias modernas do ecossistema frontend.
+Este repositório foi desenvolvido como parte de um processo seletivo para a **Econverse**, referente à vaga de **Frontend Júnior**.  
+O desafio consiste na implementação de uma **landing page** com foco em **boas práticas de desenvolvimento frontend**, garantindo organização, escalabilidade e manutenção do código.
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **React:** Biblioteca JavaScript para construção de interfaces de usuário baseadas em componentes reutilizáveis. Utilizei React para estruturar a aplicação de forma modular e escalável.
-- **TypeScript:** Superset do JavaScript que adiciona tipagem estática. Essa escolha trouxe mais segurança ao desenvolvimento, facilitando a identificação de erros e melhorando a legibilidade do código.
-- **SASS (Syntactically Awesome Style Sheets):** Pré-processador CSS que permite o uso de funcionalidades como variáveis, mixins e aninhamento. Isso tornou o gerenciamento dos estilos mais organizado e eficiente.
-- **Git:** Ferramenta de versionamento distribuído, essencial para controle de mudanças e colaboração em equipe.
+- **React:** Biblioteca JavaScript para construção de interfaces modernas e dinâmicas, baseadas em componentes reutilizáveis.  
+- **TypeScript:** Superset do JavaScript que adiciona **tipagem estática**, tornando o desenvolvimento mais seguro, legível e robusto.  
+- **Vite:** Ferramenta de build **ultrarrápida** para projetos web modernos, que substitui o Create React App em muitos cenários, oferecendo inicialização instantânea e melhor experiência de desenvolvimento.  
+- **SASS (Syntactically Awesome Style Sheets):** Pré-processador CSS que adiciona funcionalidades como variáveis, mixins e aninhamento, otimizando a escrita e manutenção dos estilos.  
+- **Git:** Sistema de **controle de versão distribuído**, essencial para versionamento do código-fonte e colaboração em equipe.  
 
 ---
 
-## 🧩 Arquitetura do Projeto
+## 🏗️ Arquitetura
 
-- **FSD (Feature-Sliced Design):** Adotei a arquitetura FSD para organizar o projeto em domínios funcionais bem definidos. Essa abordagem separa o código em camadas como:
-  - `entities/` – modelos e estruturas centrais
-  - `features/` – funcionalidades específicas
-  - `widgets/` – componentes compostos reutilizáveis
-  - `pages/` – páginas da aplicação
-  - `shared/` – utilitários e componentes globais
-
-Essa estrutura facilita a escalabilidade, manutenção e isolamento de responsabilidades.
-
----
-
-## 👨‍💻 Autor
-
-- **Daniel Pedro** — Desenvolvedor Frontend Júnior
-
----
-
-## 📌 Pontos Relevantes
-
-- Estruturação do projeto com base em padrões modernos de frontend.
-- Tipagem estática com TypeScript para maior confiabilidade e legibilidade.
-- Organização modular com FSD, promovendo clareza e escalabilidade.
-- Estilização otimizada com SASS, facilitando manutenção e reaproveitamento.
-- Versionamento eficiente com Git, garantindo rastreabilidade e colaboração.
+O projeto foi estruturado seguindo o padrão **FSD (Feature-Sliced Design)**:  
+- **Organização modular** do código em camadas e segmentos por funcionalidades (*features*).  
+- **Separação de responsabilidades**, facilitando manutenção e evolução do sistema.  
+- Estrutura clara que inclui: entidades, processos, páginas, widgets, features e módulos compartilhados (*shared*).  
 
 ---
 
 ## ⚙️ Instalação e Execução
 
-1. Clone o repositório:
+Siga os passos abaixo para rodar o projeto localmente:
+
+1. **Clone o repositório**
    ```bash
    git clone https://github.com/danielpedroo/project-econverse.git
    ```
-2. Acessando a pasta do projeto:
+
+2. **Acesse a pasta do projeto**
    ```bash
-   cd econverse-app
+    cd econverse-app
+    ```
+
+3. **Instale as dependências - Obs: Fica ao seu critério a utilizanção de outros gerenciadores de pacotes (pnpm - yarn - npm)**
+   ```bash
+    pnpm install
    ```
 
-3. Instale as dependências:
+   3.1. Json-Server é uma biblioteca que transforma um arquivo JSON (ex: db.json) em uma API REST pronta para consumo.
+        Ideal para testes e desenvolvimento, pois simula um back-end real de forma rápida e prática.
    ```bash
-    npm install
-    # ou
-    pnpm install
-    # ou
-    yarn install
-    ```
-4. Execute a aplicação (ABRA DOIS TERMINAIS):
-
-  Terminal 1 – Inicie o servidor de desenvolvimento
-  ```bash
-   pnpm run dev
-  ```
-  Terminal 2 – Inicie a API local
-  ```bash
-   pnpm run start:api
-  ```
-
-📦 Gerenciador de Pacotes
-Instalação do PNPM
-Para instalar o pnpm, siga as instruções oficiais:
-
-🔗 https://pnpm.io/pt/installation
-
-Adição da biblioteca JSON Server
-Utilizei a biblioteca json-server para simular uma API REST local:
- ```bash
    pnpm add json-server
+   ```
+   
+  ### ▶️ Execução
+
+  4. **Abra dois terminais em sua IDE**
+
+  **4.1 - Rodar a Aplicação**  
+  Inicia o servidor em modo de desenvolvimento:  
+  ```bash
+  pnpm run dev
   ```
 
-✅ Conclusão
-Esse projeto foi uma excelente oportunidade para aplicar conceitos que venho estudando como desenvolvedor júnior. Busquei seguir boas práticas, manter o código limpo e modular, e resolver os desafios com autonomia e criatividade. Estou aberto a feedbacks e melhorias contínuas.
+   **4.2 - Rodar a API Fake**  
+  Sobe a API simulada com dados do db.json:
+  ```bash
+  pnpm run start:api
+  ```
+
+✨ Pontos Relevantes
+- **Compentização, visando a reutilização de código e focando em menos verbosidade**.
+- **Estruturação do projeto com padrões modernos de frontend**.
+- **Utilização de tipagem estática para maior confiabilidade**.
+- **Organização do código baseada em FSD, visando escalabilidade**.
+- **Uso de SASS para otimização e manutenção dos estilos**.
+- **Versionamento eficiente com Git, garantindo rastreabilidade e colaboração**.
+
+### Consideração 💻📚
+
+✅ Conclusão Esse projeto foi uma excelente oportunidade para aplicar conceitos que venho estudando como desenvolvedor júnior. Busquei seguir boas práticas, manter o código limpo e modular, e resolver os desafios com autonomia e criatividade. Estou aberto a feedbacks e melhorias contínuas.
+
+> ⚠️ **Observação:**  
+> Este projeto foi desenvolvido por mim como parte de um **teste prático de Frontend Júnior**.  
+> O **design e a estruturação** foram fornecidos pela [Econverse](https://www.econverse.com.br/),  
+> e toda a implementação foi realizada integralmente por minha autoria.
+ 
+## Autores
+
+- **Daniel Pedro** (Software Developer)
+- **Econverse** (Aplicadores do teste)
